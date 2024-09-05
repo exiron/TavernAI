@@ -2714,3 +2714,17 @@ function initCardeditor() {
 //const imagePath = 'image.webp';
 //processImage(imagePath);
 */
+switch (selectedModel) {
+    case 'gpt-4o':
+        this_openai_max_context = 128000;
+        break;
+    case 'gpt-4o-2024-05-13':
+        this_openai_max_context = 128000;
+        break;
+    case 'gpt-4o-mini':
+        this_openai_max_context = 32000; // Example for the mini model
+        break;
+    default:
+        console.error("Unknown model selected");
+        break;
+}
